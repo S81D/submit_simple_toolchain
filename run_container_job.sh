@@ -11,7 +11,7 @@ ARG2=$2     # use these in the script as needed
 touch /srv/logfile_${ARG1}_${ARG2}.txt 
 
 # for toolchains that need a list file: place the input file containing the necessary data files in the toolchain
-rm /srv/DQ_tool//configfiles/PrintDQ/my_inputs.txt      # in case there is conflict with overwite
+rm /srv/ToolAnalysis/configfiles/PrintDQ/my_inputs.txt      # in case there is conflict with overwite
 \cp /srv/my_inputs.txt /srv/ToolAnalysis/configfiles/PrintDQ/ 
 
 echo "my_inputs.txt paths:" >> /srv/logfile_${ARG1}_${ARG2}.txt    # verify files are as expected
