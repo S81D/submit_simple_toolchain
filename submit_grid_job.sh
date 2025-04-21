@@ -21,16 +21,6 @@ echo ""
 # ------------------------------------------ #
 # wrapper script to submit your grid job
 
-# First few flags specify the memory and disk allocation, and the sites that are "disapproved" for our nested container workaround.
-# The -f flags are the arguments for input files, which will need to be modified as needed. 
-# Ensure you are also including/submitting with the -f flag the following files:
-    # - run_container_job.sh script, which is the script that will be executed within singularity.
-    # - ToolAnalysis tar-ball
-    # - Processed or RAW data files that are needed to run the toolchain
-# -d is the output directory where completed/processed files from your grid job will be deposited on the anniegpvms
-# file://.... is the actual job script that will execute on the worker node.
-# Lastly, you may want to pass arguments to your grid scripts. You can append those at the end of the wrapper script.
-
 #jobsub_submit \
 #  --memory=2000MB \                                                // allocated memory - almost always you are fine with 2GB - sometimes you may need 4GB but test first
 #  --expected-lifetime=6h \                                         // lifetime of the job
