@@ -5,7 +5,7 @@ import os, time
 
 tarball_name = 'MyToolAnalysis_grid.tar.gz'
 folder_path = '/exp/annie/app/users/<user>/'
-folder_name = 'EventBuilding/'
+folder_name = 'ToolAnalysis/'
 
 tar_command = 'tar -czvf ' + tarball_name + ' -C ' + folder_path + ' ' + folder_name
 
