@@ -48,20 +48,7 @@ echo ""
 
 # ----------------------------------------------- #
 
-jobsub_submit \
-  --memory=2000MB \                   
-  --expected-lifetime=6h \                                         
-  -G annie \                                                      
-  --disk=10GB \                                                    
-  --resource-provides=usage_model=OFFSITE \                        
-  --blacklist=Omaha,Swan,Wisconsin,RAL \                           
-  -f ${DATA_PATH}/ProcessedRawData_TankAndMRDAndCTC_R4314S0p2 \    
-  -f ${DATA_PATH}/ProcessedRawData_TankAndMRDAndCTC_R4314S0p3 \    
-  -f ${INPUT_PATH}/run_container_job.sh \                          
-  -f ${INPUT_PATH}/MyToolAnalysis_grid.tar.gz \                    
-  -d OUTPUT $OUTPUT_FOLDER \                                       
-  file://${INPUT_PATH}/grid_job.sh \                               
-  jobname arg1 arg2 arg3           
+jobsub_submit --memory=2000MB --expected-lifetime=6h -G annie --disk=10GB --resource-provides=usage_model=OFFSITE --blacklist=Omaha,Swan,Wisconsin,RAL -f ${DATA_PATH}/ProcessedRawData_TankAndMRDAndCTC_R4314S0p2 -f ${DATA_PATH}/ProcessedRawData_TankAndMRDAndCTC_R4314S0p3 -f ${INPUT_PATH}/run_container_job.sh -f ${INPUT_PATH}/MyToolAnalysis_grid.tar.gz -d OUTPUT $OUTPUT_FOLDER file://${INPUT_PATH}/grid_job.sh jobname arg1 arg2 arg3           
 
 # ----------------------------------------------- #              
 
