@@ -31,7 +31,7 @@ echo "" >> ${DUMMY_OUTPUT_FILE}
 
 
 # Copy datafiles from $CONDOR_INPUT onto worker node (the present working directory will be: /srv)
-${JSB_TMP}/ifdh.sh cp -D $CONDOR_DIR_INPUT/ProcessedRawData* . 
+${JSB_TMP}/ifdh.sh cp -D $CONDOR_DIR_INPUT/ProcessedData* . 
 ${JSB_TMP}/ifdh.sh cp -D $CONDOR_DIR_INPUT/MyToolAnalysis_grid.tar.gz . 
 
 # un-tar Toolanalysis
