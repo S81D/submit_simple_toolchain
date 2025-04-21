@@ -14,13 +14,13 @@ GRIDUSER="<USERNAME>"            # modify
 
 # Argument passed through job submission
 JOBNAME=$1
-ARG1=$2         // example arguments
+ARG1=$2         # example arguments
 ARG2=$3
 
 
 # --------------------------------------------------------------------------
 # Create a dummy log file in the output directory to track progress / errors
-DUMMY_OUTPUT_FILE=${CONDOR_DIR_OUTPUT}/${JOBNAME}_${ARG1}_${ARG2}_${JOBSUBJOBID}_dummy_output    // JOBSUBJOBID is a long multi-digit id # for your grid job
+DUMMY_OUTPUT_FILE=${CONDOR_DIR_OUTPUT}/${JOBNAME}_${ARG1}_${ARG2}_${JOBSUBJOBID}_dummy_output    # JOBSUBJOBID is a long multi-digit id # for your grid job
 touch ${DUMMY_OUTPUT_FILE}
 
 # keep track of run time
