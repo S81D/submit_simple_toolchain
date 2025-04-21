@@ -10,7 +10,8 @@ A tutorial video on how to use the grid can be found here: https://annie-docdb.f
 
 ## Usage
 
-- Edit scripts accordingly to suite your needs, including the username and the appropriate path locations
+- Edit scripts to suite your needs, including the username and the appropriate path locations
+- Make sure to tar-ball your ToolAnalysis directory to prepare it for grid submission. You can use `python3 tarball_create_script.py` to do this (edit the paths within the scripts accordingly).
 - `sh submit_grid_job.sh`
 
 ### Additional information
