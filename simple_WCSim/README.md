@@ -15,10 +15,10 @@ After you have successfully setup WCSim (and tested it to ensure you get back a 
         - WCSim/
         - build/
 3. Ensure you have your WCSim.mac file set up with the appropriate event generation.
-4. Remove any output files from previous event generation (any root files)
-5. Tar your WCSim folder via: `tar -czvf WCSim.tar.gz -C /exp/annie/app/users/<USERNAME>/  WCSim'
+4. Remove any output files from previous event generation (any root files).
+5. Tar your WCSim folder via: `tar -czvf WCSim.tar.gz -C /exp/annie/app/users/<USERNAME>/  WCSim`
     - where the preceeding path is the location of your WCSim folder, and WCSim is the name of the folder
-6. Copy this tar file to your scratch area
+6. Copy this tar file to your scratch area.
 
 ## Usage
 
